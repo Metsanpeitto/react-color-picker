@@ -53,7 +53,8 @@ class MyColorPicker extends React.Component {
         s: 0,
         v: 0,
       },
-      hex: "aaaaaa",
+      hex: "#aaaaaa",
+      boxShadow: `2px 2px 2px 2px #dce775`,
     };
     this.onChange = this.onChange.bind(this);
   }
@@ -70,17 +71,26 @@ class MyColorPicker extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    this.props.getColor(this.state.hex);
+  }
+
   onChange(e) {
-    const color = tinycolor(e);
-    const hexColor = color.toHex();
-    if (hexColor !== this.state.hex) {
-      //  this.props.getColor(hexColor);
+    var color = tinycolor(e);
+    var hexColor = color._originalInput;
+
+    if (color._format === "hsv" || color._format === "hsl") {
+      hexColor = color.toHex();
+      hexColor = `#${hexColor}`;
     }
+    console.log(hexColor);
+
     this.setState(() => {
       return {
         hsv: color.toHsv(),
         hsl: color.toHsl(),
         hex: color.toHex(),
+        boxShadow: `0px 0px 30px 2px ${hexColor}`,
       };
     });
   }
@@ -102,7 +112,10 @@ class MyColorPicker extends React.Component {
   render() {
     return (
       <div>
-        <div className="color-picker">
+        <div
+          className="color-picker"
+          style={{ boxShadow: this.state.boxShadow }}
+        >
           <div className="saturation-canvas">
             <Saturation
               /** This element shows a gradient sample of colors with different level of saturation

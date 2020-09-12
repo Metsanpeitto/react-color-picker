@@ -1,5 +1,6 @@
 {
   "homepage": "http://Metsanpeitto.github.io/react-color-picker",
+  "basename": "/",
   "name": "react-color-picker",
   "version": "0.1.0",
   "private": true,

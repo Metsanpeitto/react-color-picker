@@ -23,12 +23,15 @@ class App extends Component {
   }
 
   getColor = (color) => {
-    console.log(color);
-    this.setState(() => {
-      return {
-        color: `#${color}`,
-      };
-    });
+    if (`#${color}` !== this.state.color) {
+      console.log(color);
+
+      this.setState(() => {
+        return {
+          color: `#${color}`,
+        };
+      });
+    }
   };
 
   render() {
@@ -46,7 +49,11 @@ class App extends Component {
           >
             <div
               className="color"
-              style={{ background: this.state.color }}
+              style={
+                !this.state.pickerOpen
+                  ? { background: this.state.color }
+                  : { background: "#D9E3F0" }
+              }
             ></div>
           </button>
         </div>

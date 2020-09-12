@@ -84,18 +84,8 @@ export class Saturation extends (PureComponent || Component) {
         onTouchMove={this.handleChange}
         onTouchStart={this.handleChange}
       >
-        <style>{`
-          .saturation-white {
-            background: -webkit-linear-gradient(to right, #fff, rgba(255,255,255,0));
-            background: linear-gradient(to right, #fff, rgba(255,255,255,0));
-          }
-          .saturation-black {
-            background: -webkit-linear-gradient(to top, #000, rgba(0,0,0,0));
-            background: linear-gradient(to top, #000, rgba(0,0,0,0));
-          }
-        `}</style>
-        <div style={styles.white} className="saturation-white">
-          <div style={styles.black} className="saturation-black" />
+        <div className="saturation-white">
+          <div className="saturation-black" />
           <div style={styles.pointer} className="pointer">
             {this.props.pointer ? (
               <this.props.pointer {...this.props} />

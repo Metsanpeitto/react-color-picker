@@ -7,6 +7,7 @@
   height: max-content;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 0px 1px 1px #a5a5a5bd;
 
   .saturation {
     width: 300px;
@@ -17,6 +18,10 @@
 
     .saturation-white {
       position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
       border-radius: 2px;
       background: -webkit-linear-gradient(
         to right,
@@ -27,6 +32,11 @@
     }
 
     .saturation-black {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
       background: -webkit-linear-gradient(to top, #000, rgba(0, 0, 0, 0));
       background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
     }

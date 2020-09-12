@@ -4,9 +4,9 @@ Video Demo: https://www.youtube.com/watch?v=gZxYLvBtj3w&feature=youtu.be
 
 Demo: https://metsanpeitto.github.io/react-color-picker/
 
-(This repository works as you see in the video when running on my localhost. When deployed on github-pages it behaves in unexpected way. I have research a little bit and show that many others have same problems. )
-The react-color library provides all the elements and features needed to build highly customized color pickups.
+(This repository works as you see in the video when running on my localhost. When deployed on github-pages it behaves in unexpected way. I have research a little bit and seems that many others have same problem. )
 
+The react-color library provides all the elements and features needed to build highly customized color pickups.
 Anyway at the time of integrating the elements from the original dependency, the way of styling get constrained to only inline-styling.
 
 To allow more customization, I imported the folders required and refactored them to accept class styling in the most easy way to maintain, using SCSS and creating independent files for each element.

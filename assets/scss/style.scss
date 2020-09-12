@@ -1,0 +1,42 @@
+/*********************************************************************************
+
+	Template Name: color picker app
+	Note: This is style css.
+
+**********************************************************************************/
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ App
+	|
+	|___ Color Picker
+	|   |
+	|   |___ Components
+	|	    |
+	|       |___ Hue
+	|       |
+	|       |___ Saturation
+	|       |
+	|       |___ Editable Input
+	|       |
+	|       |___ Custom Pointer
+	|       |
+	|       |___ Custom Slider
+	|       |
+	|       |___ Swatches
+	|
+	|
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+/**************************************
+    Color Picker Styles
+***************************************/
+@import "color_picker/color_picker";
+@import "app";

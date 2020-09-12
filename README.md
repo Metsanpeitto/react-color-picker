@@ -1,6 +1,9 @@
                             CUSTOM PICKER COMPONENT
 
-              (Demo: https://metsanpeitto.github.io/react-color-picker/)
+      Video Demo:  https://www.youtube.com/watch?v=gZxYLvBtj3w&feature=youtu.be
+            Demo:  https://metsanpeitto.github.io/react-color-picker/
+
+       (This repository works as you see in the video when running on my          localhost. When deployed on github-pages it behaves in unexpected way. I have research a little bit and show that many others have same problems. )
 
 The react-color library provides all the elements and features needed to build highly customized color pickups.
 

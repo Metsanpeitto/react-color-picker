@@ -1,16 +1,35 @@
 /*====================
     Color Picker 
 ======================*/
-@import "./components/hue";
-@import "./components/saturation";
+@import "./elements/hue";
+@import "./elements/saturation";
+@import "./elements/editable_input";
+@import "./elements/swatches";
+@import "./elements/custom_pointer";
+@import "./elements/custom_slider";
 
 .color-picker {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
-    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   display: flex;
   flex-direction: column;
-  height: 282px;
-  width: 200px;
-  margin-left: 20%;
-  margin-top: 33vh;
+  height: 400px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  padding-top: 2%;
+  border-radius: 5px;
+  background-image: url(/assets/images/clear-blue-sky.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    margin-left: -500px;
+    margin-top: 33vh;
+    padding-top: 5%;
+    border-radius: 5px;
+  }
 }

@@ -12,24 +12,10 @@
   display: flex;
   flex-direction: column;
   height: 400px;
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  padding-top: 2%;
+  width: 330px;
+  margin-left: 35%;
+  margin-top: 10vh;
+  padding-top: 1%;
   border-radius: 5px;
-  background-image: url(/assets/images/clear-blue-sky.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .modal {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 500px;
-    margin-left: -500px;
-    margin-top: 33vh;
-    padding-top: 5%;
-    border-radius: 5px;
-  }
+  background-color: #dad8d8bf;
 }
